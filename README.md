@@ -23,4 +23,4 @@ You need to add the following endpoint to your `composer.json` file:
 
 | Package | Latest Recipe |
 | --- | --- |
-| [wolfkidsounds/spur1-base-bundle](https://github.com/wolfkidsounds/spur1-base-bundle) | [1.0](wolfkidsounds/spur1-base-bundle/1.0) |
+| [spur/spur1-base-bundle](https://github.com/wolfkidsounds/spur1-base-bundle) | [1.0](spur1/spur1-base-bundle/1.0) |
