@@ -4,8 +4,8 @@
             "all"
         ]
     },
-    "copy-from-recipe": {
-        "assets/": "assets/"
+    "copy-from-package": {
+        "assets/controllers/simplebar_controller.js": "assets/controllers/simplebar_controller.js"
     },
     "files": {
         "assets/controllers/simplebar_controller.js" : {

@@ -8,8 +8,8 @@
                         "all"
                     ]
                 },
-                "copy-from-recipe": {
-                    "assets/": "assets/"
+                "copy-from-package": {
+                    "assets/controllers/simplebar_controller.js": "assets/controllers/simplebar_controller.js"
                 },
                 "files": {
                     "assets/controllers/simplebar_controller.js" : {
@@ -40,7 +40,7 @@
                     }
                 }
             },
-            "ref": "3D5PJklEAG8sz7bqmKUEogDErQB0z85xk9MCwm4M"
+            "ref": "s4uItTO3exh0JOaIqE7W1AR72dFJmqkPwz1Dshtg"
         }
     }
 }
