@@ -1,0 +1,18 @@
+
+{
+    "manifests": {
+        "spur1/spur1-base-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Spur1\\BaseBundle\\Spur1BaseBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "assets/": "assets/"
+                }
+            },
+            "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
+        }
+    }
+}

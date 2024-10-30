@@ -1,8 +1,0 @@
-{
-    "copy-from-package": {
-        "assets/controllers/": "assets/controllers/"
-    },
-    "post-install-output": [
-        "The simplebar_controller.js file has been copied to /assets/controllers/."
-    ]
-}

@@ -1,0 +1,10 @@
+{
+    "bundles": {
+        "Spur1\\BaseBundle\\Spur1BaseBundle": [
+            "all"
+        ]
+    },
+    "copy-from-recipe": {
+        "assets/": "assets/"
+    }
+}
