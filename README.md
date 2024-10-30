@@ -1,20 +1,7 @@
 # Spur1 Symfony Flex Recipes
 
-This is a collection of recipes for Symfony Flex.
+Symfony Flex Recipes API
 
-## Installation
-
-```json
-{
-    "extra": {
-        "symfony": {
-            "allow-contrib": true,
-            "endpoint": [
-                "https://github.com/spur1/symfony-flex-recipes",
-                "flex://defaults"
-            ]
-        }
-    }
-}
-
-```
+| Package | Latest Recipe |
+| --- | --- |
+| [wolfkidsounds/spur1-base-bundle](https://github.com/wolfkidsounds/spur1-base-bundle) | [1.0](wolfkidsounds/spur1-base-bundle/1.0) |
