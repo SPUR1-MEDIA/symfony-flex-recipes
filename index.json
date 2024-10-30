@@ -7,8 +7,8 @@
     "branch": "main",
     "is_contrib": true,
     "_links": {
-        "repository": "github.com/wolfkidsounds/symfony-flex-recipes",
+        "repository": "https://github.com/wolfkidsounds/symfony-flex-recipes",
         "origin_template": "{package}:{version}@github.com/wolfkidsounds/symfony-flex-recipes:main",
-        "recipe_template": "https://api.github.com/repos/wolfkidsounds/symfony-flex-recipes/contents/{package_dotted}.{version}.json"
+        "recipe_template": "https://raw.githubusercontent.com/wolfkidsounds/symfony-flex-recipes/main/{package_dotted}.{version}.json"
     }
 }
