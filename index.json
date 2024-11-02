@@ -2,6 +2,9 @@
     "recipes": {
         "spur1/spur1-base-bundle": [
             "1.0"
+        ],
+        "spur1/spur1-api-bundle": [
+            "1.0"
         ]
     },
     "branch": "main",

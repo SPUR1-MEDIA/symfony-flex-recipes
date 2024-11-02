@@ -1,0 +1,27 @@
+{
+    "bundles": {
+        "Spur1\\ApiBundle\\Spur1ApiBundle": [
+            "all"
+        ]
+    },
+    "copy-from-package": {
+        "config/": "%CONFIG_DIR%/"
+    },
+    "env": {
+        "BASE_DOMAIN": "yourdomain.com"
+    },
+    "files": {
+        "config/packages/spur1_api_bundle.yaml" : {
+            "contents": [
+                "parameters:",
+                "    base_domain: '%env(BASE_DOMAIN)%'",
+                "",
+                "services:",
+                "Spur1\\ApiBundle\\Service\\ApiService:",
+                "    arguments:",
+                "        $base_domain: '%base_domain%'"
+            ],
+            "executable": false
+        }
+    }
+}
