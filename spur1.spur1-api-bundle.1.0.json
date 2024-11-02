@@ -1,4 +1,3 @@
-
 {
     "manifests": {
         "spur1/spur1-api-bundle": {
@@ -9,13 +8,13 @@
                     ]
                 },
                 "copy-from-package": {
-                    "config/": "%CONFIG_DIR%/"
+                    "config/packages/spur1_api_bundle.yaml": "%CONFIG_DIR%/packages/spur1_api_bundle.yaml"
                 },
                 "env": {
-                    "BASE_DOMAIN": "yourdomain.com"
+                    "BASE_DOMAIN": "'domain.com'"
                 },
                 "files": {
-                    "config/packages/spur1_api_bundle.yaml" : {
+                    "config/packages/spur1_api_bundle.yaml": {
                         "contents": [
                             "parameters:",
                             "    base_domain: '%env(BASE_DOMAIN)%'",
@@ -29,7 +28,7 @@
                     }
                 }
             },
-            "ref": "D54+qMKUqFxIZ3Bq5rZP7Nw1GzNO1kbhZAKu+HuP"
+            "ref": "IOaxD131uEIxwvg1t+KC7UsbhBQyiug+JotYSAHl"
         }
     }
 }
