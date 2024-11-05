@@ -24,18 +24,4 @@ You need to add the following endpoint to your `composer.json` file:
 | Package | Latest Recipe |
 | --- | --- |
 | [spur/spur1-base-bundle](https://github.com/wolfkidsounds/spur1-base-bundle) | [1.0](spur1/spur1-base-bundle/1.0) |
-
-
-symfony-flex-recipes
-│   README.md
-│   spur1.spur1-base-bundle.1.0.json
-│   index.json
-|   .gitignore
-│
-└───spur1
-    └───spur1-base-bundle
-        └───1.0
-            |   manifest.json
-            └───assets
-                └───controllers
-                    └───simplebar_controller.js
+| [spur/spur1-api-bundle](https://github.com/wolfkidsounds/spur1-api-bundle) | [1.0](spur1/spur1-api-bundle/1.0) |
