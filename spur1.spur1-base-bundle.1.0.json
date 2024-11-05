@@ -13,7 +13,7 @@
                     "public/.user.ini": "%PUBLIC_DIR%/.user.ini"
                 },
                 "copy-from-recipe": {
-                    "var/php/sessions/.gitignore": "%VAR_DIR%/php/sessions/.gitignore"
+                    "var/php/sessions/": "var/php/sessions/"
                 },
                 "files": {
                     "assets/controllers/simplebar_controller.js" : {
@@ -48,13 +48,6 @@
                             "session.save_path = \"../var/php/sessions/\";"
                         ],
                         "executable": false
-                    },
-
-                    "var/php/sessions/.gitignore" : {
-                        "contents": [
-                            "###spur1/spur1-base-bundle###"
-                        ],
-                        "executable": false
                     }
                 },
                 "add-lines": [
@@ -67,7 +60,7 @@
                     }
                 ]
             },
-            "ref": "YDRHecM7Dgls1mgeavooyWfFJqTa70IEtWMLNLDH"
+            "ref": "mJfdQscCcwir+CMj90GVKZOpaj8VTsFKjOUg08Ch"
         }
     }
 }
