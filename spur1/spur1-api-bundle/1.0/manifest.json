@@ -4,24 +4,21 @@
             "all"
         ]
     },
-    "copy-from-package": {
-        "config/packages/spur1_api_bundle.yaml": "%CONFIG_DIR%/packages/spur1_api_bundle.yaml"
-    },
     "env": {
         "BASE_DOMAIN": "'domain.com'"
     },
-    "files": {
-        "config/packages/spur1_api_bundle.yaml": {
-            "contents": [
-                "parameters:",
-                "    base_domain: '%env(BASE_DOMAIN)%'",
-                "",
-                "services:",
-                "Spur1\\ApiBundle\\Service\\ApiService:",
-                "    arguments:",
-                "        $base_domain: '%base_domain%'"
-            ],
-            "executable": false
+    "add-lines": [
+        {
+            "file": "config/services.yaml",
+            "content": "\nSpur1\\ApiBundle\\Service\\ApiService:\n    arguments:\n        $base_domain: '%base_domain%'",
+            "position": "after_target",
+            "target": "services:"
+        },
+        {
+            "file": "config/services.yaml",
+            "content": "\n    base_domain: '%env(BASE_DOMAIN)%'",
+            "position": "after_target",
+            "target": "parameters:"
         }
-    }
+    ]
 }
