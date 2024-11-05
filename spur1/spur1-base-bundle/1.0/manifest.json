@@ -9,7 +9,7 @@
         "public/.user.ini": "%PUBLIC_DIR%/.user.ini"
     },
     "copy-from-recipe": {
-        "var/php/sessions/.gitignore": "%VAR_DIR%/php/sessions/.gitignore"
+        "var/php/sessions/": "%VAR_DIR%/php/sessions/"
     },
     "files": {
         "assets/controllers/simplebar_controller.js" : {
