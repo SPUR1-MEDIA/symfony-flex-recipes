@@ -44,6 +44,13 @@
                 "session.save_path = \"../var/php/sessions/\";"
             ],
             "executable": false
+        },
+
+        "var/php/sessions/.gitignore" : {
+            "contents": [
+                "###spur1/spur1-base-bundle###"
+            ],
+            "executable": false
         }
     },
     "add-lines": [
