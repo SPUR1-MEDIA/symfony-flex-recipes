@@ -41,13 +41,6 @@
                             "}"
                         ],
                         "executable": false
-                    },
-
-                    "public/.user.ini" : {
-                        "contents": [
-                            "session.save_path = \"../var/php/sessions/\";"
-                        ],
-                        "executable": false
                     }
                 },
                 "add-lines": [
@@ -60,7 +53,7 @@
                     }
                 ]
             },
-            "ref": "V7KfyFD80KKzyt6sGKHjDpo7ZI5565KCeeod2ea7"
+            "ref": "hLgzHcJ8ILbg/iJPZR8BITsEaRMh67pbtPdcXLbV"
         }
     }
 }

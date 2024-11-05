@@ -37,13 +37,6 @@
                 "}"
             ],
             "executable": false
-        },
-
-        "public/.user.ini" : {
-            "contents": [
-                "session.save_path = \"../var/php/sessions/\";"
-            ],
-            "executable": false
         }
     },
     "add-lines": [
