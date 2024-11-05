@@ -13,7 +13,7 @@
                 "add-lines": [
                     {
                         "file": "config/services.yaml",
-                        "content": "\nSpur1\\ApiBundle\\Service\\ApiService:\n    arguments:\n        $base_domain: '%base_domain%'",
+                        "content": "\n    Spur1\\ApiBundle\\Service\\ApiService:\n        arguments:\n            $base_domain: '%base_domain%'\n\n",
                         "position": "after_target",
                         "target": "services:"
                     },
@@ -25,7 +25,7 @@
                     }
                 ]
             },
-            "ref": "uQyv+lJaixbgiCO6X548696X297S6sRpv9BwGz+a"
+            "ref": "a5jnPizgBFJ5h47yQVOqwCIbx4gOHGUUObqvPdjO"
         }
     }
 }
