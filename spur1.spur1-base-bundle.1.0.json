@@ -9,7 +9,11 @@
                     ]
                 },
                 "copy-from-package": {
-                    "assets/controllers/simplebar_controller.js": "assets/controllers/simplebar_controller.js"
+                    "assets/controllers/simplebar_controller.js": "assets/controllers/simplebar_controller.js",
+                    "public/.user.ini": "%PUBLIC_DIR%/.user.ini"
+                },
+                "copy-from-recipe": {
+                    "var/php/sessions": "%VAR_DIR%/php/sessions"
                 },
                 "files": {
                     "assets/controllers/simplebar_controller.js" : {
@@ -37,10 +41,26 @@
                             "}"
                         ],
                         "executable": false
+                    },
+
+                    "public/.user.ini" : {
+                        "contents": [
+                            "session.save_path = \"../var/php/sessions/\";"
+                        ],
+                        "executable": false
                     }
-                }
+                },
+                "add-lines": [
+                    {
+                        "file": "%PUBLIC_DIR%/.htaccess",
+                        "content": "\n###>spur1/spur1-base-bundle###\n php_value session.save_path \"../var/php/sessions/\";\n\n###<spur1/spur1-base-bundle###",
+                        "position": "top",
+                        "warn_if_missing": true,
+                        "requires": "symfony/apache-pack"
+                    }
+                ]
             },
-            "ref": "s4uItTO3exh0JOaIqE7W1AR72dFJmqkPwz1Dshtg"
+            "ref": "vBP7VqXDyZQBGoiXBlkxVGcxZcOeReK+OmQBfV87"
         }
     }
 }
