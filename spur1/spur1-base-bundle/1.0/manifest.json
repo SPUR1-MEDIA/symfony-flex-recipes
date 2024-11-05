@@ -5,10 +5,10 @@
         ]
     },
     "copy-from-package": {
-        "assets/controllers/simplebar_controller.js": "assets/controllers/simplebar_controller.js",
-        "public/.user.ini": "%PUBLIC_DIR%/.user.ini"
+        "assets/controllers/simplebar_controller.js": "assets/controllers/simplebar_controller.js"
     },
     "copy-from-recipe": {
+        "public/": "%PUBLIC_DIR%/",
         "var/php/sessions/": "%VAR_DIR%/php/sessions/"
     },
     "files": {
