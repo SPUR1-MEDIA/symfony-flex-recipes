@@ -6,9 +6,9 @@
     },
 
     "env": {
-        "FEATURE_REGISTER": false,
-        "FEATURE_LOGIN": false,
-        "FEATURE_OFFCANVAS": false
+        "SPUR1_FEATURE_REGISTER": false,
+        "SPUR1_FEATURE_LOGIN": false,
+        "SPUR1_FEATURE_OFFCANVAS": false
     },
 
     "copy-from-package": {

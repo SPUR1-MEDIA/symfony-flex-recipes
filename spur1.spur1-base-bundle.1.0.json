@@ -10,9 +10,9 @@
                 },
 
                 "env": {
-                    "FEATURE_REGISTER": false,
-                    "FEATURE_LOGIN": false,
-                    "FEATURE_OFFCANVAS": false
+                    "SPUR1_FEATURE_REGISTER": false,
+                    "SPUR1_FEATURE_LOGIN": false,
+                    "SPUR1_FEATURE_OFFCANVAS": false
                 },
 
                 "copy-from-package": {
@@ -26,7 +26,7 @@
                     "var/php/sessions/": "%VAR_DIR%/php/sessions/"
                 }
             },
-            "ref": "KD0CODNEKM7d6g+6fEt4MW2GlIHn2oF2HRH1FadZ"
+            "ref": "JfBtuahKe+aSM6HmsV6xF8U9kJQMUJGanU1zKTnG"
         }
     }
 }
