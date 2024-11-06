@@ -8,52 +8,25 @@
                         "all"
                     ]
                 },
-                "copy-from-package": {
-                    "assets/controllers/simplebar_controller.js": "assets/controllers/simplebar_controller.js"
+
+                "env": {
+                    "FEATURE_REGISTER": false,
+                    "FEATURE_LOGIN": false,
+                    "FEATURE_OFFCANVAS": false
                 },
+
+                "copy-from-package": {
+                    "assets/controllers/": "assets/controllers/",
+                    "config/routes/": "%CONFIG_DIR%/routes/",
+                    "config/packages/": "%CONFIG_DIR%/packages/"
+                },
+
                 "copy-from-recipe": {
                     "public/": "%PUBLIC_DIR%/",
                     "var/php/sessions/": "%VAR_DIR%/php/sessions/"
-                },
-                "files": {
-                    "assets/controllers/simplebar_controller.js" : {
-                        "contents": [
-                            "import { Controller } from '@hotwired/stimulus';",
-                            "import SimpleBar from 'simplebar';",
-                            "import ResizeObserver from 'resize-observer-polyfill';",
-                            "",
-                            "export default class extends Controller {",
-                            "    connect() {",
-                            "        window.ResizeObserver = ResizeObserver;",
-                            "        // Check if SimpleBar instance doesn't already exist before creating a new one",
-                            "        if (!this.scrollbar) {",
-                            "            this.scrollbar = new SimpleBar(this.element);  // Initialize SimpleBar on this.element",
-                            "        }",
-                            "    }",
-                            "",
-                            "    disconnect() {",
-                            "        // Check if SimpleBar instance exists, and destroy it",
-                            "        if (this.scrollbar) {",
-                            "            this.scrollbar.unMount();  // Clean up the instance",
-                            "            this.scrollbar = null;     // Reset the scrollbar reference",
-                            "        }",
-                            "    }",
-                            "}"
-                        ],
-                        "executable": false
-                    }
-                },
-                "add-lines": [
-                    {
-                        "file": "%PUBLIC_DIR%/.htaccess",
-                        "content": "\n###>spur1/spur1-base-bundle###\n php_value session.save_path \"../var/php/sessions/\";\n\n###<spur1/spur1-base-bundle###",
-                        "position": "top",
-                        "warn_if_missing": true,
-                        "requires": "symfony/apache-pack"
-                    }
-                ]
+                }
             },
-            "ref": "hLgzHcJ8ILbg/iJPZR8BITsEaRMh67pbtPdcXLbV"
+            "ref": "KD0CODNEKM7d6g+6fEt4MW2GlIHn2oF2HRH1FadZ"
         }
     }
 }
