@@ -19,13 +19,19 @@
                     },
                     {
                         "file": "config/services.yaml",
+                        "content": "\n    Spur1\\ApiBundle\\Twig\\Runtime\\ApiPropertyRuntime:\n        arguments:\n            $cache: '@cache.app'\n\n",
+                        "position": "after_target",
+                        "target": "services:"
+                    },
+                    {
+                        "file": "config/services.yaml",
                         "content": "\n    base_domain: '%env(BASE_DOMAIN)%'",
                         "position": "after_target",
                         "target": "parameters:"
                     }
                 ]
             },
-            "ref": "a5jnPizgBFJ5h47yQVOqwCIbx4gOHGUUObqvPdjO"
+            "ref": "aIsZKh4igt2a+bfxJrdn3n6mCUAHu5n48zMaRWav"
         }
     }
 }
