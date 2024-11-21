@@ -17,6 +17,7 @@
 
                 "copy-from-package": {
                     "assets/controllers/": "assets/controllers/",
+                    "assets/Spur1BaseBundle.dist.scss": "assets/styles/Spur1BaseBundle.dist.scss",
                     "config/routes/": "%CONFIG_DIR%/routes/",
                     "config/packages/": "%CONFIG_DIR%/packages/"
                 },
@@ -24,9 +25,17 @@
                 "copy-from-recipe": {
                     "public/": "%PUBLIC_DIR%/",
                     "var/php/sessions/": "%VAR_DIR%/php/sessions/"
-                }
+                },
+
+                "add-lines": [
+                    {
+                        "file": "assets/styles/app.scss",
+                        "content": "//Import Spur1BaseBundle\n@import './Spur1BaseBundle.dist.scss'; \n\n//Import your custom overrides\n\n//Import Bootstrap after importing Spur1BaseBundle\n@import '~bootstrap/scss/bootstrap';\n",
+                        "position": "bottom"
+                    }
+                ]
             },
-            "ref": "JfBtuahKe+aSM6HmsV6xF8U9kJQMUJGanU1zKTnG"
+            "ref": "Habub1uv6yRIorLpGVqg/UMZBt5hQtPM8tB9xkCD"
         }
     }
 }
