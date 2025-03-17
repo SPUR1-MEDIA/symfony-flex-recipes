@@ -1,0 +1,13 @@
+{
+    "bundles": {
+        "Spur1\\BaseBundle\\Spur1BaseBundle": [
+            "all"
+        ]
+    },
+
+    "copy-from-package": {
+        "assets/controllers/": "assets/controllers/",
+        "config/routes/": "%CONFIG_DIR%/routes/",
+        "config/packages/": "%CONFIG_DIR%/packages/"
+    }
+}

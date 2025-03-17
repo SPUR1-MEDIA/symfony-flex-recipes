@@ -10,7 +10,7 @@ You need to add the following endpoint to your `composer.json` file:
 "extra": {
     "symfony": {
         "endpoint": [
-            "https://api.github.com/repos/wolfkidsounds/symfony-flex-recipes/contents/index.json",
+            "https://api.github.com/repos/spur1-media/symfony-flex-recipes/contents/index.json",
             "flex://defaults"
         ],
         "allow-contrib": true,
@@ -23,5 +23,5 @@ You need to add the following endpoint to your `composer.json` file:
 
 | Package | Latest Recipe |
 | --- | --- |
-| [spur/spur1-base-bundle](https://github.com/wolfkidsounds/spur1-base-bundle) | [1.0](spur1/spur1-base-bundle/1.0) |
-| [spur/spur1-api-bundle](https://github.com/wolfkidsounds/spur1-api-bundle) | [1.0](spur1/spur1-api-bundle/1.0) |
+| [spur/spur1-base-bundle](https://github.com/spur1-media/spur1-base-bundle) | [2.0](spur1-media/spur1-base-bundle/2.0) |
+| [spur/spur1-api-bundle](https://github.com/spur1-media/spur1-api-bundle) | [1.0](spur1-media/spur1-api-bundle/1.0) |

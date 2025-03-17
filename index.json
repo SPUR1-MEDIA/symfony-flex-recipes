@@ -1,5 +1,8 @@
 {
     "recipes": {
+        "spur1-media/spur1-base-bundle": [
+            "2.0"
+        ],
         "spur1/spur1-base-bundle": [
             "1.0"
         ],
@@ -10,8 +13,8 @@
     "branch": "main",
     "is_contrib": true,
     "_links": {
-        "repository": "github.com/wolfkidsounds/symfony-flex-recipes",
-        "origin_template": "{package}:{version}@github.com/wolfkidsounds/symfony-flex-recipes:main",
-        "recipe_template": "https://raw.githubusercontent.com/wolfkidsounds/symfony-flex-recipes/main/{package_dotted}.{version}.json"
+        "repository": "github.com/spur1-media/symfony-flex-recipes",
+        "origin_template": "{package}:{version}@github.com/spur1-media/symfony-flex-recipes:main",
+        "recipe_template": "https://raw.githubusercontent.com/spur1-media/symfony-flex-recipes/main/{package_dotted}.{version}.json"
     }
 }
