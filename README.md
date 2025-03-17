@@ -14,7 +14,7 @@ You need to add the following endpoint to your `composer.json` file:
             "flex://defaults"
         ],
         "allow-contrib": true,
-        "require": "6.4.*"
+        "require": "7.2.*"
     }
 },
 ```
@@ -24,4 +24,4 @@ You need to add the following endpoint to your `composer.json` file:
 | Package | Latest Recipe |
 | --- | --- |
 | [spur/spur1-base-bundle](https://github.com/spur1-media/spur1-base-bundle) | [2.0](spur1-media/spur1-base-bundle/2.0) |
-| [spur/spur1-api-bundle](https://github.com/spur1-media/spur1-api-bundle) | [1.0](spur1-media/spur1-api-bundle/1.0) |
+| [spur/spur1-api-bundle](https://github.com/spur1-media/spur1-api-bundle) | [1.0](spur1/spur1-api-bundle/1.0) |
