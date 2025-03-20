@@ -1,7 +1,6 @@
-
 {
     "manifests": {
-        "spur1-media/spur1-base-bundle": {
+        "spur1/spur1-base-bundle": {
             "manifest": {
                 "bundles": {
                     "Spur1\\BaseBundle\\Spur1BaseBundle": [
@@ -9,13 +8,33 @@
                     ]
                 },
 
+                "env": {
+                    "SPUR1_FEATURE_REGISTER": false,
+                    "SPUR1_FEATURE_LOGIN": false,
+                    "SPUR1_FEATURE_OFFCANVAS": false
+                },
+
                 "copy-from-package": {
                     "assets/controllers/": "assets/controllers/",
+                    "assets/styles/spur1-base-bundle.dist.scss": "assets/styles/spur1-base-bundle.dist.scss",
                     "config/routes/": "%CONFIG_DIR%/routes/",
                     "config/packages/": "%CONFIG_DIR%/packages/"
-                }
+                },
+
+                "copy-from-recipe": {
+                    "public/": "%PUBLIC_DIR%/",
+                    "var/php/sessions/": "%VAR_DIR%/php/sessions/"
+                },
+
+                "add-lines": [
+                    {
+                        "file": "assets/styles/app.scss",
+                        "content": "//Import Spur1/Spur1BaseBundle\n@import './spur1-base-bundle.dist.scss'; \n\n//Import your custom overrides\n\n//Import Bootstrap after importing Spur1/Spur1BaseBundle\n@import '~bootstrap/scss/bootstrap';\n",
+                        "position": "top"
+                    }
+                ]
             },
-            "ref": "oYNju8CPOI0ceokX4ui9KYIZunhDGlCVabZVmxo8"
+            "ref": "FAXQc4KQd/646Gk0bfsEEn48hVUgz8S90leX+qlH"
         }
     }
 }
