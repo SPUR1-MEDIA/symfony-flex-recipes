@@ -1,0 +1,19 @@
+{
+    "manifests": {
+        "spur1-media/spur1-base-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Spur1\\BaseBundle\\Spur1BaseBundle": [
+                        "all"
+                    ]
+                },
+
+                "copy-from-package": {
+                    "config/routes/": "%CONFIG_DIR%/routes/",
+                    "config/packages/": "%CONFIG_DIR%/packages/"
+                }
+            },
+            "ref": "dKZdLkCloiD8FOKF3Fe7VbtPuua0ZaMnp5aQNEOb"
+        }
+    }
+}
