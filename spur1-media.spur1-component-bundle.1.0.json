@@ -1,0 +1,26 @@
+{
+    "manifests": {
+        "spur1-media/spur1-component-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Spur1\\ComponentBundle\\Spur1ComponentBundle": [
+                        "all"
+                    ]
+                },
+
+                "copy-from-package": {
+                    "/assets/spur1-component-bundle.dist.scss": "assets/styles/bundles/spur1-component-bundle.scss"
+                },
+                
+                "add-lines": [
+                    {
+                        "file": "assets/styles/app.scss",
+                        "content": "@import './bundles/spur1-component-bundle.scss';",
+                        "position": "top"
+                    }
+                ]
+            },
+            "ref": "oBsk2Scb9ptEu0QjVT5PCU3Vft+tuPWo1eRAn/1G"
+        }
+    }
+}

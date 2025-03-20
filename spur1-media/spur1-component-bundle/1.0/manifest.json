@@ -1,0 +1,19 @@
+{
+    "bundles": {
+        "Spur1\\ComponentBundle\\Spur1ComponentBundle": [
+            "all"
+        ]
+    },
+
+    "copy-from-package": {
+        "/assets/spur1-component-bundle.dist.scss": "assets/styles/bundles/spur1-component-bundle.scss"
+    },
+
+    "add-lines": [
+        {
+            "file": "assets/styles/app.scss",
+            "content": "@import './bundles/spur1-component-bundle.scss';",
+            "position": "top"
+        }
+    ]
+}
