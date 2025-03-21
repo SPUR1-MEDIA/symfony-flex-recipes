@@ -1,0 +1,24 @@
+{
+    "manifests": {
+        "spur1-media/spur1-auth-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Spur1\\AuthBundle\\Spur1AuthBundle": [
+                        "all"
+                    ]
+                },
+
+                "copy-from-package": {
+                    "config/routes/": "%CONFIG_DIR%/routes/"
+                },
+                
+                "env": {
+                    "AUTHENTIK_CLIENT_ID": "client_id",
+                    "AUTHENTIK_CLIENT_SECRET": "client_secret"
+                }
+
+            },
+            "ref": "sfceraa9jrWyoF2XP0vjLK6kvVMltkT29nrKSkNw"
+        }
+    }
+}
