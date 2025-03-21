@@ -6,7 +6,8 @@
     },
 
     "copy-from-package": {
-        "config/routes/": "%CONFIG_DIR%/routes/"
+        "config/routes/": "%CONFIG_DIR%/routes/",
+        "config/packages/": "%CONFIG_DIR%/packages/"
     },
 
     "env": {
