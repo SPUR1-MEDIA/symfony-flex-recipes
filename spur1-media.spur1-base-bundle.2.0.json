@@ -9,11 +9,10 @@
                 },
 
                 "copy-from-package": {
-                    "config/routes/": "%CONFIG_DIR%/routes/",
-                    "config/packages/": "%CONFIG_DIR%/packages/"
+                    "config/routes/": "%CONFIG_DIR%/routes/"
                 }
             },
-            "ref": "dKZdLkCloiD8FOKF3Fe7VbtPuua0ZaMnp5aQNEOb"
+            "ref": "q5Y5nenqKFu4/lZRfo9oTJE+LnwjEUu7w/3HTftS"
         }
     }
 }
