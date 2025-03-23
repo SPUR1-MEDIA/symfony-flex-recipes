@@ -10,12 +10,12 @@
                 
                 "env": {
                     "API_APP_ID": "api-app-id",
-                    "API_CLIENT_ID": "api-client-id",
-                    "API_CLIENT_SECRET": "api-client-secret"
+                    "SPUR1_ARTISTS_CLIENT_ID": "api-client-id",
+                    "SPUR1_ARTISTS_CLIENT_SECRET": "api-client-secret"
                 }
 
             },
-            "ref": "OSDxv/+r/6X/QPhmHpcphbR5dsqtz+S0kYMeui+h"
+            "ref": "x5c+eqh2RCV59Qtr9iv4k3A3lhjd4uPxANNzz6cE"
         }
     }
 }
