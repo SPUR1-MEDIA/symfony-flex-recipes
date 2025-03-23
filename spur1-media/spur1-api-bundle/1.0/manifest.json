@@ -1,0 +1,13 @@
+{
+    "bundles": {
+        "Spur1\\ApiBundle\\Spur1ApiBundle": [
+            "all"
+        ]
+    },
+
+    "env": {
+        "API_APP_ID": "api-app-id",
+        "API_CLIENT_ID": "api-client-id",
+        "API_CLIENT_SECRET": "api-client-secret"
+    }
+}
