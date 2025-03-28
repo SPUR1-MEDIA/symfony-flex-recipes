@@ -9,10 +9,17 @@
                 },
 
                 "copy-from-package": {
-                    "config/routes/": "%CONFIG_DIR%/routes/"
+                    "config/routes/": "%CONFIG_DIR%/routes/",
+                    "config/packages/": "%CONFIG_DIR%/packages/"
+                },
+
+                "env": {
+                    "SITE_ID": "site-id",
+                    "SITE_TITLE": "site-title",
+                    "SITE_VERSION": "site-version"
                 }
             },
-            "ref": "q5Y5nenqKFu4/lZRfo9oTJE+LnwjEUu7w/3HTftS"
+            "ref": "d/jhSbfSgjho1kZz7J5oybKr9HQi6e+ShBr81lM2"
         }
     }
 }

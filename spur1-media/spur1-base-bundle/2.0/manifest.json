@@ -6,6 +6,13 @@
     },
 
     "copy-from-package": {
-        "config/routes/": "%CONFIG_DIR%/routes/"
+        "config/routes/": "%CONFIG_DIR%/routes/",
+        "config/packages/": "%CONFIG_DIR%/packages/"
+    },
+
+    "env": {
+        "SITE_ID": "site-id",
+        "SITE_TITLE": "site-title",
+        "SITE_VERSION": "site-version"
     }
 }
