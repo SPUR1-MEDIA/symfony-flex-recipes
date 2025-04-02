@@ -1,0 +1,16 @@
+{
+    "manifests": {
+        "spur1-media/spur1-feature-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Spur1\\FeatureBundle\\Spur1FeatureBundle": ["all"]
+                },
+
+                "copy-from-recipe": {
+                    ".env.features": ".env.features"
+                }
+            },
+            "ref": "E3SG47tJtRz4D5x7KhWI2pD4imYjx+WT6XWWTpgP"
+        }
+    }
+}

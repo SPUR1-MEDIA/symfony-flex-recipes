@@ -1,0 +1,9 @@
+{
+    "bundles": {
+        "Spur1\\FeatureBundle\\Spur1FeatureBundle": ["all"]
+    },
+
+    "copy-from-recipe": {
+        ".env.features": ".env.features"
+    }
+}
