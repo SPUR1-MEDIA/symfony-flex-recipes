@@ -3,9 +3,7 @@
         "spur1-media/spur1-style-bundle": {
             "manifest": {
                 "bundles": {
-                    "Spur1\\StyleBundle\\Spur1StyleBundle": [
-                        "all"
-                    ]
+                    "Spur1\\StyleBundle\\Spur1StyleBundle": ["all"]
                 },
 
                 "copy-from-package": {
@@ -18,9 +16,15 @@
                         "content": "@import './bundles/spur1-style-bundle.scss';",
                         "position": "top"
                     }
-                ]
+                ],
+
+                "composer-scripts": {
+                    "importmap:install": "symfony-cmd",
+                    "sass:build": "symfony-cmd",
+                    "asset-map:compile": "symfony-cmd"
+                }
             },
-            "ref": "E3SG47tJtRz4D5x7KhWI2pD4imYjx+WT6XWWTpgP"
+            "ref": "xbUjj7PSiMzd1n8pOEuwj02/ZuuKAQVhIacMtOln"
         }
     }
 }
