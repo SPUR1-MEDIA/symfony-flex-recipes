@@ -13,13 +13,28 @@
                     "config/packages/": "%CONFIG_DIR%/packages/"
                 },
 
+                "add-lines": [
+                    {
+                        "file": "%CONFIG_DIR%/packages/twig.yaml",
+                        "content": "\n    globals:\n        site_id: '%env(string:SITE_ID)%'\n        site_title: '%env(string:SITE_TITLE)%'\n        site_version: '%env(string:SITE_VERSION)%'\n\n",
+                        "position": "after_target",
+                        "target": "twig:"
+                    },
+                    {
+                        "file": "%CONFIG_DIR%/services.yaml",
+                        "content": "\n    site_id: '%env(string:SITE_ID)%'\n    site_title: '%env(string:SITE_TITLE)%'\n    site_version: '%env(string:SITE_VERSION)%'\n\n",
+                        "position": "after_target",
+                        "target": "parameters:"
+                    }
+                ],
+
                 "env": {
                     "SITE_ID": "site-id",
                     "SITE_TITLE": "site-title",
                     "SITE_VERSION": "site-version"
                 }
             },
-            "ref": "d/jhSbfSgjho1kZz7J5oybKr9HQi6e+ShBr81lM2"
+            "ref": "xwlWQJxJo1M0FdwT/NNV35LXPcvpGK9W7KddkwcY"
         }
     }
 }
