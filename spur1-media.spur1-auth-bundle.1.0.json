@@ -8,18 +8,45 @@
                     ]
                 },
 
+                "env": {
+                    "AUTHENTIK_CLIENT_ID": "client_id",
+                    "AUTHENTIK_CLIENT_SECRET": "client_secret"
+                },
+
                 "copy-from-package": {
                     "config/routes/": "%CONFIG_DIR%/routes/",
                     "config/packages/": "%CONFIG_DIR%/packages/"
                 },
-                
-                "env": {
-                    "AUTHENTIK_CLIENT_ID": "client_id",
-                    "AUTHENTIK_CLIENT_SECRET": "client_secret"
-                }
+
+                "add-lines": [
+                    {
+                        "file": "%CONFIG_DIR%/packages/security.yaml",
+                        "content": "\n    role_hierarchy:\n        ROLE_ADMIN:       ROLE_EDITOR\n        ROLE_EDITOR:      ROLE_USER\n        ROLE_USER:        []\n\n",
+                        "position": "after_target",
+                        "target": "security:"
+                    },
+                    {
+                        "file": "%CONFIG_DIR%/packages/security.yaml",
+                        "content": "\n        oauth_user_provider:\n            id: 'Spur1\\AuthBundle\\Authentik\\AuthentikUserProvider'\n\n",
+                        "position": "after_target",
+                        "target": "providers:"
+                    },
+                    {
+                        "file": "%CONFIG_DIR%/packages/security.yaml",
+                        "content": "\n        main:\n            lazy: true\n            provider: oauth_user_provider\n            custom_authenticators:\n                - Spur1\\AuthBundle\\Authentik\\AuthentikAuthenticator\n            logout:\n                path: auth_logout\n\n",
+                        "position": "after_target",
+                        "target": "firewalls:"
+                    },
+                    {
+                        "file": "%CONFIG_DIR%/packages/security.yaml",
+                        "content": "\n        - { path: ^/auth/authentik/callback, roles: PUBLIC_ACCESS }\n        - { path: ^/auth/authentik/connect, roles: PUBLIC_ACCESS }\n        - { path: ^/admin, roles: ROLE_ADMIN }\n\n",
+                        "position": "after_target",
+                        "target": "access_control:"
+                    }
+                ]
 
             },
-            "ref": "sfceraa9jrWyoF2XP0vjLK6kvVMltkT29nrKSkNw"
+            "ref": "1kTtVFKKVKs57cuihDTaDExhZgEBAebqZyZLMvNP"
         }
     }
 }
