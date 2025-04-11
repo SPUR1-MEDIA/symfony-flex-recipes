@@ -1,0 +1,11 @@
+{
+    "bundles": {
+        "Spur1\\SeoBundle\\Spur1SeoBundle": [
+            "all"
+        ]
+    },
+
+    "copy-from-package": {
+        "/config/packages/spur1_seo.yaml": "%CONFIG_DIR%/packages/spur1_seo.yaml"
+    }
+}
