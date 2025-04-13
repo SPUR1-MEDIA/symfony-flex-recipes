@@ -10,7 +10,8 @@
 
                 "env": {
                     "AUTHENTIK_CLIENT_ID": "client_id",
-                    "AUTHENTIK_CLIENT_SECRET": "client_secret"
+                    "AUTHENTIK_CLIENT_SECRET": "client_secret",
+                    "AUTHENTIK_API_TOKEN": "api_token"
                 },
 
                 "copy-from-package": {
@@ -46,7 +47,7 @@
                 ]
 
             },
-            "ref": "1kTtVFKKVKs57cuihDTaDExhZgEBAebqZyZLMvNP"
+            "ref": "JdEkj0swR2qt7V4wTUDZdBmA+q8Q87nJOvr60Y7l"
         }
     }
 }

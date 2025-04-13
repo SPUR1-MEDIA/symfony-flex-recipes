@@ -6,7 +6,8 @@
     },
     "env": {
         "AUTHENTIK_CLIENT_ID": "client_id",
-        "AUTHENTIK_CLIENT_SECRET": "client_secret"
+        "AUTHENTIK_CLIENT_SECRET": "client_secret",
+        "AUTHENTIK_API_TOKEN": "api_token"
     },
     "copy-from-package": {
         "config/routes/": "%CONFIG_DIR%/routes/",
