@@ -7,7 +7,7 @@
                 },
 
                 "copy-from-recipe": {
-                    "/.env.features": "/.env.features"
+                    ".env.features": ".env.features"
                 }
             },
             "ref": "N2cPSd2W0VMDjf1+Xw2WIGudKkw2xwl0WAvvX9J1"
