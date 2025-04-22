@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "spur1-media/spur1-media-manager-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Spur1\\MediaManager\\Spur1MediaManagerBundle": ["all"]
+                },
+                
+                "add-lines": [
+                    {
+                        "file": "importmap.php",
+                        "content": "    '@spur1-media-manager' => [\n        'path' => './vendor/spur1-media/spur1-media-manager-bundle/assets/spur1-media-manager-bundle.js',\n        'entrypoint' => true,    ],\n",
+                        "position": "before_target",
+                        "target": "];"
+                    },
+                    {
+                        "file": "importmap.php",
+                        "content": "    'axios' => [\n        'version' => '1.8.4',\n    ],\n",
+                        "position": "before_target",
+                        "target": "];"
+                    }
+                ]
+            },
+            "ref": "xbUjj7PSiMzd1n8pOEuwj02/ZuuKAQVhIacMtOln"
+        }
+    }
+}
