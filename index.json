@@ -1,5 +1,8 @@
 {
     "recipes": {
+        "spur1-media/spur1-media-manager-bundle": [
+            "1.0"
+        ],
         "spur1-media/spur1-base-bundle": [
             "2.0"
         ],
