@@ -1,36 +1,6 @@
 {
     "recipes": {
-        "spur1-media/spur1-media-manager-bundle": [
-            "1.0"
-        ],
-        "spur1-media/spur1-base-bundle": [
-            "2.0"
-        ],
-        "spur1-media/spur1-api-bundle": [
-            "1.0"
-        ],
-        "spur1-media/spur1-api-platform-bundle": [
-            "1.0"
-        ],
-        "spur1-media/spur1-auth-bundle": [
-            "1.0"
-        ],
-        "spur1-media/spur1-component-bundle": [
-            "1.0"
-        ],
         "spur1-media/spur1-feature-bundle": [
-            "1.0"
-        ],
-        "spur1-media/spur1-style-bundle": [
-            "1.0"
-        ],
-        "spur1-media/spur1-seo-bundle": [
-            "1.0"
-        ],
-        "spur1/spur1-base-bundle": [
-            "1.0"
-        ],
-        "spur1/spur1-api-bundle": [
             "1.0"
         ]
     },
