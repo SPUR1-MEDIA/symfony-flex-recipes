@@ -1,0 +1,11 @@
+{
+	"bundles": {
+		"Spur1\\ApiBundle\\Spur1ApiBundle": ["all"]
+	},
+	"env": {
+		"SPUR1_API_BASE_URL": "https://core.spur1.media/api",
+		"SPUR1_API_USER": "",
+		"SPUR1_API_PASSWORD": "",
+		"SPUR1_API_CONTEXT": ""
+	}
+}
